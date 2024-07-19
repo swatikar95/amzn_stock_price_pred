@@ -8,7 +8,7 @@ This script contains a real-world stock price dataset (Amazon) collected from Ya
 ### Method Overview
 
 #### Logistic Regression
-Suppose our dataset has two features $X_1$ and $X_2$ with target variable $Y$.
+Suppose our dataset has two features $X_1$ and $X_2$ with target variable $`Y`$.
 ![Logistic Regression](image-3.png)
 
 - **Parameters** (for simplicity, I am taking random values): 
