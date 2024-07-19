@@ -11,9 +11,7 @@ Suppose our dataset has two features $`X_1`$ and $`X_2`$ with target variable $`
     - Weights: $w_1 = 0.5$, $w_2 = 0.3$
     - Bias: $b = -2.5$
 
-- **Linear Combination**: For each data point, compute the linear combination of the input features using the formula: 
-
-$$z = w_1 \cdot X_1 + w_2 \cdot X_2 + b$$
+- **Linear Combination**: For each data point, compute the linear combination of the input features using the formula: $z = w_1 \cdot X_1 + w_2 \cdot X_2 + b$
 
 1. **Data point 1**: ($X_1 = 2$, $X_2 = 3$)
 
