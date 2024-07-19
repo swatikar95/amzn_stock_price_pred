@@ -1,11 +1,11 @@
 ### Project Overview
 This script contains real world stock price dataset(Amazon) collected from yahoo finance. I have applied three machine learning algorithms on this dataset: Logistic Regression, Decision Tree and Random Forest
 
-### Method Overview
+<!-- ### Method Overview
 `Logistic Regression`: Suppose our dataset has two features $X_1$ and $X_2$ with target variable $Y$.
 ![alt text](image-3.png)
 - Parameters(for simplicity, I am taking random values): 
-    - Weights: $w_1$=0.5,$w_2$=0.3
+    - Weights: $w_1=0.5$,$w_2$=0.3
     - Bias: $b$=-2.5
 - Linear Combination:For each data point, compute the linear combination of the input features using the formula:
 $$z=w_1⋅X_1+w_2⋅X_2+b$$
@@ -27,7 +27,44 @@ $$\sigma(-0.5)=1/(1+e^{0.5}) = 0.3775$$
 4. Data Point 4: $z=1.6$
 $$\sigma(1.6)=1/(1+e^{-1.6}) = 0.8320$$ 
 - Predictions: If the probability is greater than 0.5, predict $Y$=1; otherwise, predict $Y$=0
-    
+     -->
+
+
+
+### Method Overview
+
+`Logistic Regression`: Suppose our dataset has two features $X_1$ and $X_2$ with target variable $Y$.
+![alt text](image-3.png)
+
+- **Parameters** (for simplicity, I am taking random values): 
+    - Weights: $w_1 = 0.5$, $w_2 = 0.3$
+    - Bias: $b = -2.5$
+
+- **Linear Combination**: For each data point, compute the linear combination of the input features using the formula:
+    $$z = w_1 \cdot X_1 + w_2 \cdot X_2 + b$$
+
+    1. **Data point 1**: ($X_1 = 2$, $X_2 = 3$)
+        $$z = 0.5 \cdot 2 + 0.3 \cdot 3 - 2.5 = -0.6$$
+    2. **Data point 2**: ($X_1 = 6$, $X_2 = 8$)
+        $$z = 0.5 \cdot 6 + 0.3 \cdot 8 - 2.5 = 2.9$$
+    3. **Data point 3**: ($X_1 = 1$, $X_2 = 5$)
+        $$z = 0.5 \cdot 1 + 0.3 \cdot 5 - 2.5 = -0.5$$
+    4. **Data point 4**: ($X_1 = 7$, $X_2 = 2$)
+        $$z = 0.5 \cdot 7 + 0.3 \cdot 2 - 2.5 = 1.6$$
+
+- **Apply Sigmoid Function**:
+    $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
+
+    1. **Data Point 1**: $z = -0.6$
+        $$\sigma(-0.6) = \frac{1}{1 + e^{0.6}} = 0.3543$$ 
+    2. **Data Point 2**: $z = 2.9$
+        $$\sigma(2.9) = \frac{1}{1 + e^{-2.9}} = 0.9478$$ 
+    3. **Data Point 3**: $z = -0.5$
+        $$\sigma(-0.5) = \frac{1}{1 + e^{0.5}} = 0.3775$$ 
+    4. **Data Point 4**: $z = 1.6$
+        $$\sigma(1.6) = \frac{1}{1 + e^{-1.6}} = 0.8320$$ 
+
+- **Predictions**: If the probability is greater than 0.5, predict $Y = 1$; otherwise, predict $Y = 0$.
 
 `Decision Tree`: Constructs a model in the form of a tree structure to make decisions based on the input features. I will explain with the same previous example how it works:
 
