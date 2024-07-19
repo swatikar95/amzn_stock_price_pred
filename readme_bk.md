@@ -3,7 +3,7 @@ This script contains real world stock price dataset(Amazon) collected from yahoo
 
 <!-- ### Method Overview
 `Logistic Regression`: Suppose our dataset has two features $X_1$ and $X_2$ with target variable $Y$.
-![alt text](image-3.png)
+![alt text](/images/image-3.png)
 - Parameters(for simplicity, I am taking random values): 
     - Weights: $w_1=0.5$,$w_2$=0.3
     - Bias: $b$=-2.5
@@ -34,7 +34,7 @@ $$\sigma(1.6)=1/(1+e^{-1.6}) = 0.8320$$
 ### Method Overview
 
 `Logistic Regression`: Suppose our dataset has two features $X_1$ and $X_2$ with target variable $Y$.
-![alt text](image-3.png)
+![alt text](/images/image-3.png)
 
 - **Parameters** (for simplicity, I am taking random values): 
     - Weights: $w_1 = 0.5$, $w_2 = 0.3$
@@ -68,7 +68,7 @@ $$\sigma(1.6)=1/(1+e^{-1.6}) = 0.8320$$
 
 `Decision Tree`: Constructs a model in the form of a tree structure to make decisions based on the input features. I will explain with the same previous example how it works:
 
-![alt text](image.png)
+![alt text](/images/image.png)
 
 - Root node selection: Firstly, we need to decide on the best feature to split the data at the root node.
 For simplicity, let's assume we choose $X_1$ as our first splitting feature.
@@ -77,12 +77,12 @@ For simplicity, let's assume we choose $X_1$ as our first splitting feature.
     - right node: $X_1$>5, data points: (6,8,1),(7,2,1)
 - Leaf nodes: Since the data points in each node are perfectly classified, we can create leaf nodes directly.
 
-![alt text](image-1.png)
+![alt text](/images/image-1.png)
 
 - Prediction: If a new node comes with value (5,5), the model will predict $Y$ = 0
 
 `Random Forest`:It is based on Decision tree but uses multiple trees(previous one uses single tree). I will consider the same dataset for this one as well
-![alt text](image-2.png)
+![alt text](/images/image-2.png)
 
 - Bootstrap Samples: It creates multiple subsets of the original dataset by sampling with replacement
     - Sample 1: (2,3,0),(6,8,1),(2,3,0),(7,2,1)
@@ -111,15 +111,15 @@ Since all trees predict $Y$=0, the final prediction for the data point (5,5) is 
 ### Results
 `Logistic Regression`
 
-![alt text](output1.png)
+![alt text](/images/output1.png)
 
 `Decision Tree Classifier`
 
-![alt text](output2.png)
+![alt text](/images/output2.png)
 
 `Random Forest Classifier`
 
-![alt text](output3.png)
+![alt text](/images/output3.png)
 
 Random Forest performed better as it can capture more complex situations than other two algorithms
 

@@ -5,7 +5,7 @@ This script contains a real-world stock price dataset (Amazon) collected from Ya
 
 #### Logistic Regression
 Suppose our dataset has two features $`X_1`$ and $`X_2`$ with target variable $`Y`$.
-![Logistic Regression](image-3.png)
+![Logistic Regression](/images/image-3.png)
 
 - **Parameters** (for simplicity, I am taking random values): 
     - Weights: $w_1 = 0.5$, $w_2 = 0.3$
@@ -54,7 +54,7 @@ $$\sigma(z) = \frac{1}{1 + e^{-z}}$$
 #### Decision Tree
 Constructs a model in the form of a tree structure to make decisions based on the input features.
 
-![Decision Tree](image.png)
+![Decision Tree](/images/image.png)
 
 - **Root node selection**: Decide on the best feature to split the data at the root node. For simplicity, let's assume we choose $X_1$ as our first splitting feature.
 - **Splitting data**: Choose a threshold value $X_1 = 5$ based on which we will split:
@@ -62,13 +62,13 @@ Constructs a model in the form of a tree structure to make decisions based on th
     - Right node: $X_1 > 5$, data points: (6,8,1), (7,2,1)
 - **Leaf nodes**: Since the data points in each node are perfectly classified, we can create leaf nodes directly.
 
-![Decision Tree Leaf Nodes](image-1.png)
+![Decision Tree Leaf Nodes](/images/image-1.png)
 
 - **Prediction**: If a new node comes with value (5,5), the model will predict $Y = 0$.
 
 #### Random Forest
 Based on Decision Tree but uses multiple trees. I will consider the same dataset for this one as well.
-![Random Forest](image-2.png)
+![Random Forest](/images/image-2.png)
 
 - **Bootstrap Samples**: Creates multiple subsets of the original dataset by sampling with replacement:
     - Sample 1: (2,3,0), (6,8,1), (2,3,0), (7,2,1)
@@ -97,15 +97,15 @@ Since all trees predict $Y = 0$, the final prediction for the data point (5,5) i
 ### Results
 #### Logistic Regression
 
-![Logistic Regression Results](output1.png)
+![Logistic Regression Results](/images/output1.png)
 
 #### Decision Tree Classifier
 
-![Decision Tree Results](output2.png)
+![Decision Tree Results](/images/output2.png)
 
 #### Random Forest Classifier
 
-![Random Forest Results](output3.png)
+![Random Forest Results](/images/output3.png)
 
 Random Forest performed better as it can capture more complex situations than the other two algorithms.
 
