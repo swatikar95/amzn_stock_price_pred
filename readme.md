@@ -1,14 +1,10 @@
-Certainly! Here is the fixed version of your GitHub README page:
-
----
-
 ### Project Overview
 This script contains a real-world stock price dataset (Amazon) collected from Yahoo Finance. I have applied three machine learning algorithms on this dataset: Logistic Regression, Decision Tree, and Random Forest.
 
 ### Method Overview
 
 #### Logistic Regression
-Suppose our dataset has two features $X_1$ and $X_2$ with target variable $Y$.
+Suppose our dataset has two features $`X_1`$ and $`X_2`$ with target variable $`Y`$.
 ![Logistic Regression](image-3.png)
 
 - **Parameters** (for simplicity, I am taking random values): 
@@ -99,6 +95,3 @@ Since all trees predict $Y = 0$, the final prediction for the data point (5,5) i
 
 Random Forest performed better as it can capture more complex situations than the other two algorithms.
 
----
-
-This should render correctly on GitHub. Let me know if you need any further adjustments!
