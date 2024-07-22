@@ -4,6 +4,9 @@ This script contains a real-world stock price dataset (Amazon) collected from Ya
 ### Method Overview
 
 #### Logistic Regression
+ `Logistic Regression` is used to map predicted values to probabilities. The output is always between 0 ans 1, which makes it suitable for binary classification.
+
+ 
 Suppose our dataset has two features $`X_1`$ and $`X_2`$ with target variable $`Y`$.
 ![Logistic Regression](/images/image-3.png)
 
@@ -67,7 +70,9 @@ Constructs a model in the form of a tree structure to make decisions based on th
 - **Prediction**: If a new node comes with value (5,5), the model will predict $Y = 0$.
 
 #### Random Forest
-Based on Decision Tree but uses multiple trees. I will consider the same dataset for this one as well.
+An ensemble learning method, which means it combines multiple learning algorithms to achieve better predictive performance than any of the individual algorithms alone. Specifically, it uses a collection of decision trees, hence the name "forest".
+
+To explain this method, I will consider the same dataset.
 ![Random Forest](/images/image-2.png)
 
 - **Bootstrap Samples**: Creates multiple subsets of the original dataset by sampling with replacement:
